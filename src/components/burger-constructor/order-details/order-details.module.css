@@ -1,0 +1,66 @@
+.container {
+    background-color: #1c1c21;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    --width-modal: 720px;
+    --height-modal: 718px;
+
+    width: var(--width-modal);
+    height: var(--height-modal);
+
+    border: none;
+    border-radius: 40px;
+    top: 50%;
+    left: calc(50% - var(--width-modal) / 2);
+    transform: translateY(-50%);
+    padding: 40px;
+    z-index: 10000;
+
+    color: #f2f2f3;
+}
+
+.failOrderContainer {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(50%);
+
+    background-color: rgba(167, 27, 27, 0.527);
+    width: 400px;
+    height: 50px;
+    left: calc(50% - 400px / 2);
+    top: 10%;
+    border-radius: 10px;
+}
+
+.closeButton {
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.identity {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.startOrder {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    height: 24px;
+    letter-spacing: 2px;
+}
